@@ -1,0 +1,66 @@
+.heading--1 {
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 1px 1px 6px #463128;
+    text-align: center;
+    line-height: 1;
+    @media only screen and (min-width: 800px) {
+        font-size: 4.5rem;
+    }
+    @media only screen and (min-width: 1200px) {
+        font-size: 5.5rem;
+    }
+}
+
+.section-1-para {
+    color: #000;
+    line-height: 2;
+    text-align: left;
+    font-size: clamp(2rem, 2vw, 3rem);
+}
+
+.location__para {
+    font-size: 1.8rem;
+    text-align: left;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.contact__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    text-align: left;
+}
+
+.showcase__description {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #000;
+    line-height: 1.6;
+    &::after {
+        content: '';
+        width: 40%;
+        height: 2px;
+        background-color: #000;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 2rem;
+    }
+    padding: 3rem;
+}
+
+.feature__para {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-weight: 400;
+    text-align: center;
+    @media only screen and (min-width: 800px) {
+        text-align: left;
+    }
+}
+
+.footer__para {
+    font-size: 1.8rem;
+    text-align: center;
+}

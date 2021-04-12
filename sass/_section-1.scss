@@ -1,0 +1,19 @@
+.section-1 {
+    margin-top: 5rem;
+    background-image: url("../images/section-1.png");
+    background-size: cover;
+    background-position: bottom;
+    padding-block: clamp(5rem, 8vw, 10rem);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section-1-text-wrapper {
+    background-color: hsla(0, 0%, 100%, 0.568);
+    padding: 2rem;
+
+    @media only screen and (min-width: 800px) {
+        flex-basis: 80%;
+    }
+}

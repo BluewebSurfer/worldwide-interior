@@ -1,0 +1,31 @@
+.support {
+    padding: 2rem;
+}
+
+.support-img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    img {
+        width: 50%;
+    }
+    @media only screen and (min-width: 800px) {
+        flex-direction: row;
+        img {
+            flex-basis: 22%;
+            width: 22%;
+        }
+    }
+}
+
+.support-text-wrapper {
+    max-width: 80rem;
+    margin: 3rem auto;
+    p {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1.6;
+    }
+}

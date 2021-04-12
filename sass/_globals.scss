@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html {
+    font-size: 62.5%; //10px
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gabriola;
+    src: url("../fonts/gabriola.ttf");
+}
+
+body {
+    font-family: gabriola;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+
+.bg-img {
+    background: url("../images/background.png");
+    background-attachment: fixed;
+}

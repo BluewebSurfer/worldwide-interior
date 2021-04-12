@@ -1,0 +1,43 @@
+.section-composition {
+    padding: 2.5rem;
+    margin-block: 10vh;
+}
+
+.composition {
+    @media only screen and (min-width: 800px) {
+        width: 60%;
+        margin-inline: auto;
+    }
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    &__photo {
+        width: 100%;
+        outline-offset: clamp(0.5rem, 1vw, 2rem);
+        transition: all .3s;
+        z-index: 10;
+        &--p1 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 7;
+        }
+        &--p2 {
+            grid-row-start: 3;
+            grid-row-end: 6;
+            grid-column-start: 6;
+            grid-column-end: 11;
+        }
+        &--p3 {
+            grid-row-start: 1;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 10;
+        }
+        &:hover {
+            outline: clamp(1rem, 1vw, 1.5rem) solid $color-primary;
+            transform: scale(1.05);
+            z-index: 20;
+        }
+    }
+}
